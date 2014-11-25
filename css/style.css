@@ -5,41 +5,39 @@ html, body {
 }
 
 body {
-	/*background: url('../img/dark_mosaic.png') no-repeat;
-	background-size: cover;*/
-	background: #F0FFF0;
+	background: url('../img/form.jpg');
 	font-family: 'Bree Serif', serif;
 }
 
+input[type=text] {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #000;
+	background: none;
+	text-align: center;	
+
+}
 
 #item {
 	display: block;
-	height: 1em;
-	width: 17em;
-	padding: 1em;
-	margin: 0 auto 1em;
-	border-radius: 1em;
-	border: 1px solid gold;
+	height: 2em;
+	width: 10em;
+	margin: 0 auto 0.2em;
 	font-size: 1em;
-	background: #FFEBCD;
 }
 
-input[type=text] {
-	
-}
-
-#container {
+/*#container {
 	position: relative;
 	width: 100%;
 	margin: 0.5em auto;
 	text-align: center;
-}
+}*/
 
 form, #summary {
-	max-height: 50em;
-	display: inline-block;
+	position: relative;
+	width: 35em;
 	padding: 0 1.5em 1em;
-	margin: 2em auto;
+	margin: 1em auto 2em;
 	border-radius: 0.5em;
 }
 
@@ -49,25 +47,29 @@ form, #summary {
 }
 
 form {
-	max-width: 25em;
-	background: #f3f4f5;
-	margin: 1em 5em 1em 1em;
-	background: url('../img/form.jpg');
-}
-
-#summary {
-}
-
-form h1 {
-	color: #DC143C;
+	background: none;
+	text-align: center;
 }
 
 ul {
 		list-style: none;
 }
 
+input[type=button] {
+	border: none;
+	background: none;
+	outline: none;
+	transition-duration: .3s;
+}
+
+input[type=button]:hover {
+	color: red; 
+}
+
 #addBtn {
-	
+	height: 2em;
+	width: 8em;
+	font-size: 1em;
 }
 
 #summary li {
@@ -77,7 +79,8 @@ ul {
 }
 
 ul li {
-	padding: 0.5em;
+	border: 1px solid #000;
+	padding: 0.5em 0;
 	border-radius: 1em;
 }
 
@@ -85,11 +88,11 @@ ul label, ol label {
 	margin: 0 9em 0 1em;
 }
 
-ul button {
+/*ul button {
 	margin: auto 0.1em;
 	background: #f3f4f5;
 	border: 1px solid #f3f4f5; 
-}
+}*/
 
 h1 {
 	margin: 0 auto 1em;
@@ -114,5 +117,19 @@ ul li.editMode label, ul li.editMode input[type=checkbox] {
 
 #finalList input[type=button] {
 	display: none;
+}
+
+#finalList {
+	margin-top: 2.5em;
+}
+
+footer {
+	position: relative;
+	bottom: 1em;
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #000;
 }
 
