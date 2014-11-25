@@ -13,12 +13,10 @@
 
 			<form action="index.html" method="post">
 				<h1>Going shopping?</h1>
-				<input type="text" id="item" name="item_to_buy" placeholder="Scribble items here">
+				<h2>Scribble items to buy on this wall</h2>
+				<input type="text" id="item" name="item_to_buy" placeholder="Scribble items here" autofocus="autofocus">
 				<input type = "button" value="Add Item" id="addBtn">
 				<ul id="sketchList"> 
-					<li>
-						<input type="checkbox"><label>Good Morning Oats</label><input type="text"><input type = "button" value="Change" class="edit"><input type = "button" value="Remove" class="delete">
-					</li>
 					<li>
 						<input type="checkbox"><label>Ginger Tea</label><input type="text" value="Toothpaste"><input type = "button" value="Change" class="edit"><input type = "button" value="Remove" class="delete">
 					</li>
@@ -26,11 +24,8 @@
 			</form>
 
 			<div id="summary">
-				<h1>Final Shopping List</h1>
+				<h1>Checked off</h1>
 				<ul id="finalList">
-					<li>
-						<input type="checkbox" checked><label>Toothbrush</label><input type="text"><input type = "button" value="Change" class="edit"><input type = "button" value="Remove" class="delete">
-					</li>
 					<li>
 						<input type="checkbox" checked><label>Toilet Soap</label><input type="text"><input type = "button" value="Change" class="edit"><input type = "button" value="Remove" class="delete">
 					</li>
