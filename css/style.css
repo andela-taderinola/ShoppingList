@@ -26,18 +26,11 @@ input[type=text] {
 	font-size: 1em;
 }
 
-/*#container {
-	position: relative;
-	width: 100%;
-	margin: 0.5em auto;
-	text-align: center;
-}*/
-
 form, #summary {
 	position: relative;
-	width: 35em;
+	width: 32em;
 	padding: 0 1.5em 1em;
-	margin: 1em auto 2em;
+	margin: 1em auto 0; 
 	border-radius: 0.5em;
 }
 
@@ -55,11 +48,33 @@ ul {
 		list-style: none;
 }
 
+li {
+	border: 1px solid #000;
+	padding: 0.5em 0;
+	border-radius: 1em;
+	text-align: left;
+	border: 0 auto 0.3em;
+}
+
+#summary li {
+	border: 1px solid #DC143C;
+	background: #CD5C5C;
+}
+
+ul label {
+	margin: 0 1em 0 1em;
+}
+
 input[type=button] {
 	border: none;
 	background: none;
 	outline: none;
+	visibility: hidden;
 	transition-duration: .3s;
+}
+
+form ul:hover input[type=button]{
+		visibility: visible;
 }
 
 input[type=button]:hover {
@@ -70,29 +85,8 @@ input[type=button]:hover {
 	height: 2em;
 	width: 8em;
 	font-size: 1em;
+	visibility: visible;
 }
-
-#summary li {
-	border: 1px solid #DC143C;
-	background: #CD5C5C;
-	border: 0 auto 0.3em;
-}
-
-ul li {
-	border: 1px solid #000;
-	padding: 0.5em 0;
-	border-radius: 1em;
-}
-
-ul label, ol label {
-	margin: 0 9em 0 1em;
-}
-
-/*ul button {
-	margin: auto 0.1em;
-	background: #f3f4f5;
-	border: 1px solid #f3f4f5; 
-}*/
 
 h1 {
 	margin: 0 auto 1em;
